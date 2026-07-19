@@ -1,5 +1,5 @@
 {% set name = "prance" %}
-{% set version = "25.4.8.0" %}
+{% set version = "26.7.19.0" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/prance-{{ version }}.tar.gz
-  sha256: 2f72d2983d0474b6f53fd604eb21690c1ebdb00d79a6331b7ec95fb4f25a1f65
+  sha256: 18c52bc9ace4de2b58be1d810543d675a8640f06c2ea5d06427f12f1e612be8d
 
 build:
   entry_points:
@@ -29,9 +29,9 @@ requirements:
   run:
     - python >={{ python_min }}
     - chardet >=5.2
-    - ruamel.yaml >=0.18.10
-    - requests >=2.32.3
-    - packaging >=24.2
+    - ruamel.yaml >=0.18.16
+    - requests >=2.32.5
+    - packaging >=25.0
 
 test:
   imports:
