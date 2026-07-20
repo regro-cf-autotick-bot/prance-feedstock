@@ -43,6 +43,7 @@ test:
   requires:
     - pip
     # optional dependency needed only for `prance --help`
+    - click >=8.3.0
     - flex-swagger
     - python {{ python_min }}
 
